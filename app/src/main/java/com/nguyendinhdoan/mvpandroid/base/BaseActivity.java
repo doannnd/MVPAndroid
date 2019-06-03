@@ -15,8 +15,4 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseMvpV
 
     }
 
-    @Override
-    public void hideLoading() {
-
-    }
 }

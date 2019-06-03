@@ -7,7 +7,7 @@ import android.view.View;
  * can be accessed from the children classed by calling getMvpView()
  * @param <V>
  */
-public class BasePresenter<V> implements BaseMvpPresenter<V> {
+public class BasePresenter<V extends BaseMvpView> implements BaseMvpPresenter<V> {
 
     private V mvpView;
 
@@ -19,5 +19,13 @@ public class BasePresenter<V> implements BaseMvpPresenter<V> {
     @Override
     public void onDetach() {
         this.mvpView = null;
+    }
+
+    public boolean isViewAttached() {
+        return mvpView != null;
+    }
+
+    public V getMvpView() {
+        return this.mvpView;
     }
 }

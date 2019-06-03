@@ -1,4 +1,4 @@
 package com.nguyendinhdoan.mvpandroid.main;
 
-public interface MainMvpPresenter {
+public interface MainMvpPresenter<V extends MainMvpView> {
 }
