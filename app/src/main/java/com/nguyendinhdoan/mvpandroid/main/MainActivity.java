@@ -1,9 +1,12 @@
-package com.nguyendinhdoan.mvpandroid;
+package com.nguyendinhdoan.mvpandroid.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.nguyendinhdoan.mvpandroid.R;
+import com.nguyendinhdoan.mvpandroid.base.BaseActivity;
+
+public class MainActivity extends BaseActivity implements MainMvpView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
