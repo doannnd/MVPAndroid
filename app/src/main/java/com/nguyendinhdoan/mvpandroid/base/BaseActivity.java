@@ -9,4 +9,14 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseMvpV
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void hideLoading() {
+
+    }
 }
