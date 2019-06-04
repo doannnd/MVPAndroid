@@ -15,5 +15,7 @@ public interface ActivityComponent {
 
     void injectMainActivity(MainActivity mainActivity);
 
-    void injectOtherActivity();
+    void injectLoginActivity(LoginActivity loginActivity);
+
+    void injectMainActivity2(Main2Activity main2Activity);
 }
