@@ -1,4 +1,4 @@
-package com.nguyendinhdoan.mvpandroid.main;
+package com.nguyendinhdoan.mvpandroid.ui.main;
 
 import com.nguyendinhdoan.mvpandroid.base.BaseMvpView;
 

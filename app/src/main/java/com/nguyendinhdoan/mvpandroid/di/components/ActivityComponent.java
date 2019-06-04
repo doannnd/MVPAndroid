@@ -2,7 +2,8 @@ package com.nguyendinhdoan.mvpandroid.di.components;
 
 import com.nguyendinhdoan.mvpandroid.di.modules.ActivityModule;
 import com.nguyendinhdoan.mvpandroid.di.scopes.ActivityScope;
-import com.nguyendinhdoan.mvpandroid.main.MainActivity;
+import com.nguyendinhdoan.mvpandroid.ui.login.LoginActivity;
+import com.nguyendinhdoan.mvpandroid.ui.main.MainActivity;
 
 import dagger.Component;
 
