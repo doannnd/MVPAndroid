@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVPAndroid</string>
+    <string name="new_account">New Account</string>
+    <string name="hint_email">Email</string>
 </resources>
