@@ -3,6 +3,9 @@ package com.nguyendinhdoan.mvpandroid.di.modules;
 import android.app.Activity;
 import android.content.Context;
 
+import com.nguyendinhdoan.mvpandroid.MvpAndroid;
+import com.nguyendinhdoan.mvpandroid.di.qualifiers.ActivityContext;
+import com.nguyendinhdoan.mvpandroid.di.qualifiers.ApplicationContext;
 import com.nguyendinhdoan.mvpandroid.di.scopes.ActivityScope;
 import com.nguyendinhdoan.mvpandroid.main.MainMvpPresenter;
 import com.nguyendinhdoan.mvpandroid.main.MainMvpView;
@@ -14,21 +17,16 @@ import dagger.Provides;
 @Module
 public class ApplicationModule {
 
-    private Activity activity;
+    private MvpAndroid app;
 
-    public ApplicationModule(Activity activity) {
-        this.activity = activity;
+    public ApplicationModule(MvpAndroid app) {
+        this.app = app;
     }
 
     @Provides
-    @ActivityContext
+    @ApplicationContext
     Context provideContext() {
-        return activity;
+        return app;
     }
 
-    @Provides
-    @ActivityScope
-    MainMvpPresenter<MainMvpView> provideMainPresenter(MainPresenter<MainMvpView> presenter) {
-        return presenter;
-    }
 }
