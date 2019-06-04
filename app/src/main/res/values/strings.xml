@@ -2,4 +2,9 @@
     <string name="app_name">MVPAndroid</string>
     <string name="new_account">New Account</string>
     <string name="hint_email">Email</string>
+
+    <string name="error_message">Error</string>
+    <string name="invalid_email_error">Please enter a valid email</string>
+    <string name="empty_email_error">Email cannot be empty</string>
+    <string name="empty_password_error">Password cannot be empty</string>
 </resources>
